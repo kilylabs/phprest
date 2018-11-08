@@ -1,5 +1,5 @@
 {
-    "name": "phprest/phprest",
+    "name": "kilylabs/phprest",
     "description": "Php Rest Framework.",
     "keywords": ["phprest", "framework", "micro", "rest", "restful", "api"],
     "license": "MIT",
