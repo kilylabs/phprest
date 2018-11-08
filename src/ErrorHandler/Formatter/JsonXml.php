@@ -39,7 +39,7 @@ class JsonXml extends AbstractFormatter
      *
      * @return string
      */
-    public function format(\Exception $exception)
+    public function format($exception)
     {
         $response = new Response();
 
@@ -49,7 +49,7 @@ class JsonXml extends AbstractFormatter
                 is_null($this->request) ? Request::createFromGlobals() : $this->request,
                 $response
             );
-        } catch (\Exception $e) {
+        } catch (\Throwable $e) {
             $response->setContent(
                 $this->serviceHateoas()->getSerializer()->serialize(
                     $this->config->isDebug() ? new Entity\DebugError($e) : new Entity\Error($e),

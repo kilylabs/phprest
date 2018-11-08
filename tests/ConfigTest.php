@@ -67,7 +67,7 @@ class ConfigTest extends \PHPUnit_Framework_TestCase {
         $this->assertInstanceOf('\League\Event\Emitter', $config->getEventEmitter());
         $this->assertInstanceOf('\Phprest\Service\Hateoas\Config', $config->getHateoasConfig());
         $this->assertInstanceOf('\Phprest\Service\Hateoas\Service', $config->getHateoasService());
-        $this->assertInstanceOf('\League\BooBoo\Runner', $config->getErrorHandler());
+        $this->assertInstanceOf('\League\BooBoo\BooBoo', $config->getErrorHandler());
         $this->assertInstanceOf('\Phprest\ErrorHandler\Handler\Log', $config->getLogHandler());
     }
 

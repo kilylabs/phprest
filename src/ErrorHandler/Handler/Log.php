@@ -32,9 +32,9 @@ class Log implements HandlerInterface
     }
 
     /**
-     * @param \Exception $exception
+     * @param $exception
      */
-    public function handle(\Exception $exception)
+    public function handle($exception)
     {
         if ($exception instanceof \ErrorException) {
             $this->handleErrorException($exception);
@@ -85,11 +85,11 @@ class Log implements HandlerInterface
     }
 
     /**
-     * @param \Exception $exception
+     * @param $exception
      *
      * @return string
      */
-    protected function buildLogMessage(\Exception $exception)
+    protected function buildLogMessage($exception)
     {
         $message = $exception->getMessage() . "({$exception->getCode()})";
 
