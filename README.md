@@ -1,6 +1,6 @@
 # Kily Labs
 
-Added PHP 7.1 support!
+Added PHP 7.0 support!
 
 # Phprest
 
