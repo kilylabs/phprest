@@ -79,7 +79,7 @@ class Log implements HandlerInterface
         return true;
     }
 
-    protected function buildLogMessage(Exception $exception): string
+    protected function buildLogMessage(\Throwable $exception): string
     {
         $message = $exception->getMessage() . "({$exception->getCode()})";
 

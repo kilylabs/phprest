@@ -31,7 +31,7 @@ class Error
     /**
      * @param \Exception $exception
      */
-    public function __construct(\Exception $exception)
+    public function __construct(\Throwable $exception)
     {
         $this->code     = $exception->getCode();
         $this->message  = $exception->getMessage();
